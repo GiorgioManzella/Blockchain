@@ -1,21 +1,23 @@
-import { Navbar, Welcome, Services, Transactions, Footer } from "";
+import {
+  NavBar,
+  Welcome,
+  Services,
+  Transactions,
+  Footer,
+} from "../src/components/index.js";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <div className="App">
-      <div className="min-h-screen">
-        <div className="gradient-bg-welcome">
-          <Navbar />
-          <Welcome />
-        </div>
-        <Services />
-        <Transactions />
-        <Footer />
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <NavBar />
+        <Welcome />
       </div>
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
